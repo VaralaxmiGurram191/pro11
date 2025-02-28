@@ -5,7 +5,7 @@ pipeline {
 
 stage('clone') { 
             steps {
-                git ''
+                git 'https://github.com/VaralaxmiGurram191/pro11.git'
             }
         }
                 
