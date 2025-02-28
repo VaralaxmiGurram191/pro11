@@ -11,12 +11,12 @@ stage('clone') {
                 
 stage('Build') {
             steps {
-                sh 'javac Helloworld.java'
+                sh 'javac hii.java'
             }
         }
 stage('Test') {
 steps{
-sh'java helloworld'
+sh'java hii'
 }
 }
 }
