@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Donation Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="form-body">
+  <div class="form-container">
+    <div class="toggle-buttons">
+      <button id="donationBtn" class="active">Donation</button>
+      <button id="receiveBtn">Receive</button>
+    </div>
+
+    <!-- Donation Form -->
+    <form id="donationForm" class="form-content">
+      <input type="text" placeholder="Type of Items" required />
+      <input type="text" placeholder="Quantity of food" required />
+      <textarea placeholder="Address" required></textarea>
+
+      <label>Proof:
+        <input type="file" />
+      </label>
+      <button type="submit" class="submit-button">SUBMIT</button>
+    </form>
+
+    <!-- Receive Form -->
+    <form id="receiveForm" class="form-content hidden">
+      <p class="section-title">AVAILABLE FOOD ITEMS:</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> ITEM NAME</label>
+        <label><input type="checkbox" /> ITEM NAME</label>
+        <label><input type="checkbox" /> ITEM NAME</label>
+        <label><input type="checkbox" /> ITEM NAME</label>
+        <label><input type="checkbox" /> ITEM NAME</label>
+      </div>
+
+      <p class="section-title">SELECTED FOOD QUANTITY:</p>
+      <button type="submit" class="submit-button">SUBMIT</button>
+    </form>
+
+    <div class="preview-box"></div>
+  </div>
+</body>
+</html>
